@@ -28,8 +28,6 @@ export PATH=$OPENMPI_ROOT/bin:$PATH
 export LD_LIBRARY_PATH=$OPENMPI_ROOT/lib:$LD_LIBRARY_PATH
 export INCLUDE=$OPENMPI_ROOT/include:$INCLUDE
 export FPATH=$OPENMPI_ROOT/include:$FPATH
-
-# Add other required library paths if necessary
 export LD_LIBRARY_PATH=/home/rohit.dhariwal/cadence/installs/SPECTRE211/tools.lnx86/lib/64bit/SuSE/SLES12:$LD_LIBRARY_PATH
 # Step 6: Configure Build with CMake
 cmake .. \
@@ -63,16 +61,16 @@ cmake . -DRUNDIR=/data/lab/meng/jahidul/trialgchp146  # Your run directory path
 # Step 9: Install the Build
 make install
 # Step 10: Prepare to Run GCHP
-# - Go to your run directory:
+**- Go to your run directory:**
 cd /data/lab/meng/jahidul/trialgchp146 # Your run directory path
 
-# - Edit `setCommonRunSettings.sh` to configure your simulation settings.
+**- Edit `setCommonRunSettings.sh` to configure your simulation settings.**
 nano setCommonRunSettings.sh
-# - Source the settings:
+**- Source the settings:**
 ./setCommonRunSettings.sh
 # Step 11: Setup Restart and Input File Links
-# - Download required restart and input files to appropriate locations.
-# - Then run the restart linking script:
+**- Download required restart and input files to appropriate locations.**
+**- Then run the restart linking script:**
 ./setRestartLink.sh
 # Step 12: Submit the Job via Slurm
 **Assuming you have a batch script named `gchp_run.sh`, submit your job:**
