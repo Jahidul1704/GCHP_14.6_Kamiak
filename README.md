@@ -13,7 +13,9 @@ cd run
 **After this, configure your run settings as needed and set the run directory path**
 # Step 4: Prepare Build Directory
 cd ~/GCHP
+
 mkdir -p build
+
 cd build
 # Step 5: Set Environment Variables (adjust paths as per your setup)
 export NETCDF_ROOT=/data/lab/meng/jahidul/netcdf
