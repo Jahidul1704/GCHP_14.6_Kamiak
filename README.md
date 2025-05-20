@@ -19,9 +19,13 @@ mkdir -p build
 cd build
 # Step 5: Set Environment Variables (adjust paths as per your setup)
 export NETCDF_ROOT=/data/lab/meng/jahidul/netcdf
+
 export NETCDF_C_LIBRARY=$NETCDF_ROOT/lib/libnetcdf.so
+
 export NETCDF_F_LIBRARY=$NETCDF_ROOT/lib/libnetcdff.so
+
 export NETCDF_C_INCLUDE_DIR=$NETCDF_ROOT/include
+
 export NETCDF_F90_INCLUDE_DIR=$NETCDF_ROOT/include
 
 export LD_LIBRARY_PATH=$NETCDF_ROOT/lib:$LD_LIBRARY_PATH
@@ -29,9 +33,13 @@ export LD_LIBRARY_PATH=$NETCDF_ROOT/lib:$LD_LIBRARY_PATH
 export OPENMPI_ROOT=/home/mdjahidul.islam/software/openmpi/5.0.0
 
 export PATH=$OPENMPI_ROOT/bin:$PATH
+
 export LD_LIBRARY_PATH=$OPENMPI_ROOT/lib:$LD_LIBRARY_PATH
+
 export INCLUDE=$OPENMPI_ROOT/include:$INCLUDE
+
 export FPATH=$OPENMPI_ROOT/include:$FPATH
+
 export LD_LIBRARY_PATH=/home/rohit.dhariwal/cadence/installs/SPECTRE211/tools.lnx86/lib/64bit/SuSE/SLES12:$LD_LIBRARY_PATH
 # Step 6: Configure Build with CMake
 cmake .. \
