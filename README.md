@@ -74,15 +74,20 @@ cmake . -DRUNDIR=/data/lab/meng/jahidul/trialgchp146  # Your run directory path
 make install
 # Step 10: Prepare to Run GCHP
 **- Go to your run directory:**
+
 cd /data/lab/meng/jahidul/trialgchp146 # Your run directory path
 
 **- Edit `setCommonRunSettings.sh` to configure your simulation settings.**
+
 nano setCommonRunSettings.sh
+
 **- Source the settings:**
+
 ./setCommonRunSettings.sh
 # Step 11: Setup Restart and Input File Links
 **- Download required restart and input files to appropriate locations.**
 **- Then run the restart linking script:**
+
 ./setRestartLink.sh
 # Step 12: Submit the Job via Slurm
 **Assuming you have a batch script named `gchp_run.sh`, submit your job:**
