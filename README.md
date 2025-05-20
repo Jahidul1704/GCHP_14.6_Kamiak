@@ -4,6 +4,7 @@
 module load openmpi hdf5
 # Step 2: Clone the GCHP Repository
 git clone --recurse-submodules https://github.com/geoschem/GCHP.git ~/GCHP
+
 cd ~/GCHP
 # Step 3: Create Run Directory
 cd run
