@@ -9,6 +9,7 @@ cd ~/GCHP
 # Step 3: Create Run Directory
 cd run
 ./createRunDir.sh
+
 **After this, configure your run settings as needed and set the run directory path**
 # Step 4: Prepare Build Directory
 cd ~/GCHP
