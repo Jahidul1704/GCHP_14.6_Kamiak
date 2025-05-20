@@ -1,2 +1,3 @@
 conda activate gcp_env
+cd GCPy
 https://gcpy.readthedocs.io/en/stable/Regridding.html
